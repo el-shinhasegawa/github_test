@@ -10,10 +10,12 @@
 
 コードを記載する
 
-
+![test](./github/use%20crate/1.PNG)
 
 $ git config --global user.name "sample name"
 $ git config --global user.email sample@example.com
+
+
 
 
 
