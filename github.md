@@ -61,12 +61,18 @@ https://gitforwindows.org/
 
 ![test](./github/windwos%20for%20git/16.PNG)
 
+## Github SSH接続
+Git Bashを起動する
 
+Gitの情報を登録する
 ```
 $ git config --global user.name "sample name"
 $ git config --global user.email sample@example.com
 ```
 
+登録の確認
+user.name
+user.email
 ```
 $ git config -l
 diff.astextplain.textconv=astextplain
@@ -87,6 +93,38 @@ core.editor="C:\Users\el000\AppData\Local\Programs\Microsoft VS Code\bin\code" -
 user.name=el-shinhasegawa
 user.email=testhasegawauser@gmail.com
 ```
+
+### 新しい SSH キーを生成する
+```
+ls ~/.ssh
+```
+
+```
+ssh-keygen -t ed25519 -C "GitHubに登録したメールアドレス"
+```
+
+```
+ls ~/.ssh
+```
+
+### GitHub アカウントへSSHキーを追加する
+```
+clip < ~/.ssh/id_ed25519.pub
+```
+
+
+### SSH 接続を確認する
+```
+ssh -T git@github.com
+
+```
+あなたのユーザー名が表示されたら接続完了です。
+
+
+
+
+
+
 
 
 
