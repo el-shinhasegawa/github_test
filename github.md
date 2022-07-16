@@ -1,11 +1,5 @@
-# test
-## test
-### test
-
-- test
-- test 
-- test 
-
+# Github
+## 登録方法
 ユーザー登録後メールを確認して
 
 コードを記載する
